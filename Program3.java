@@ -3,7 +3,27 @@
 import java.util.Scanner; //This imports the console scanner that reads user input
 
 //Your code here:
+public class Program3{
+    public static void main(String[]args){
+        // variables 
+        int width = 0;
+        int area = 0;
+        int perimeter = 0;
 
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the length: ");
+        int length = Integer.parseInt(scan.nextLine(),10);
+        System.out.print("Enter the width: ");
+        width = Integer.parseInt(scan.nextLine(),10);
+        area = (length * width);
+        perimeter = (length * 2 + width * 2 );
+        System.out.println("The length is : " + length);
+        System.out.println("\nThe width is : " + width + "\n");
+        System.out.println("\nThe area is : " + area);
+        System.out.println("\nThe perimeter is : " + perimeter);
+    }   
+}
 
 
 
